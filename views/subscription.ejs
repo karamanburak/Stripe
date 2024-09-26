@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Subscriptions with Node.js</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: 30px;
+        }
+
+        .plan {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plan:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        p.price {
+            font-size: 1.5rem;
+            color: #28a745;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #005bb5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Choose Your Plan</h1>
+
+    <div class="plans">
+        <div class="plan">
+            <h2>Starter</h2>
+            <p class="price">$20/month</p>
+            <p>This is the Starter plan, perfect for individuals.</p>
+            <a href="/subscribe?plan=starter" class="subscribe-btn">Subscribe</a>
+        </div>
+
+        <div class="plan">
+            <h2>Pro</h2>
+            <p class="price">$49/month</p>
+            <p>This is the Pro plan, ideal for professionals and businesses.</p>
+            <a href="/subscribe?plan=pro" class="subscribe-btn">Subscribe</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Hotello Subscriptions
+    </footer>
+
+</body>
+
+</html>
