@@ -123,7 +123,7 @@ app.get("/complete", async (req, res) => {
   // console.log(req.query.session_id);
   // console.log(session);
   // console.log(lineItems);
-  console.log(result);
+  // console.log(JSON.stringify(await result));
 
   res.send("Your payment was successful");
 });
