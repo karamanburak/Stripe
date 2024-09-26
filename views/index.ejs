@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+
+        .product h3 {
+            margin: 0;
+            color: #555;
+        }
+
+        .product p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .checkout-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .checkout-btn input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .checkout-btn input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <div class="product">
+            <div class="product-info">
+                <h3>Node.js and Express Book</h3>
+                <p>Price: €50.00</p>
+                <p>Quantity: 1</p>
+            </div>
+        </div>
+
+        <div class="checkout-btn">
+            <form action="/checkout" method="post">
+                <input type="submit" value="Proceed to Checkout">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
